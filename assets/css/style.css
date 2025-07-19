@@ -506,7 +506,7 @@ h1 span {
     margin-bottom: 65px;
 }
 .d2c_project_wrapper .d2c_large_img {
-    height: 700px;
+    height: 500px;
 }
 .d2c_project_wrapper .d2c_small_img {
     height: 338px;
@@ -674,6 +674,31 @@ h1 span {
 textarea {
     margin-bottom: 30px !important;
 }
+
+/* Contact Information Icons */
+.contact-info .d2c_service_icon {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    background: none;
+    border-radius: 0;
+    margin-right: 15px !important;
+    color: var(--secondary_color);
+}
+.contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info .contact-item a {
+    color: var(--text_color);
+    text-decoration: none;
+    transition: 0.4s all;
+}
+.contact-info .contact-item a:hover {
+    color: var(--secondary_color);
+    transition: 0.4s all;
+}
 /* Contact Section End */
 
 /* Footer Section Start */
@@ -826,6 +851,42 @@ textarea {
     transition: all ease 0.4s;
 }
 /* Scroll Button End */
+
+/* Resume Button Start */
+#resumeBtn {
+    position: fixed;
+    bottom: 100px;
+    right: 80px;
+    z-index: 9999;
+}
+#resumeBtn a {
+    background: var(--secondary_color);
+    color: var(--default_color);
+    border-radius: 4px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid var(--secondary_color);
+    transition: all ease 0.4s;
+    text-decoration: none;
+}
+#resumeBtn a:hover {
+    color: var(--default_color);
+    background: var(--accent_color);
+    border: 2px solid var(--accent_color);
+    transition: all ease 0.4s;
+}
+#resumeBtn a i {
+    font-size: 16px;
+}
+#resumeBtn a span {
+    display: inline-block;
+}
+/* Resume Button End */
 
 
 /* 

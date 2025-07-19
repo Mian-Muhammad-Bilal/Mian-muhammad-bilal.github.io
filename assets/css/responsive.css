@@ -258,6 +258,19 @@
     #scrollBtn.show {
         display: none;
     }
+    /* Resume Button Mobile */
+    #resumeBtn {
+        bottom: 90px;
+        right: 70px;
+    }
+    #resumeBtn a {
+        padding: 6px 12px;
+        font-size: 12px;
+        gap: 6px;
+    }
+    #resumeBtn a i {
+        font-size: 14px;
+    }
     /* Copy Right End */
 }
 
