@@ -660,6 +660,91 @@ h1 span {
     margin-bottom: 65px;
 }
 
+/* New Project Card Styles */
+.d2c_project_card {
+    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0) 100%), #131722;
+    border: 1px solid #333B6D;
+    border-radius: 8px;
+    padding: 30px;
+    height: 100%;
+    transition: 0.4s all;
+    position: relative;
+    overflow: hidden;
+}
+
+.d2c_project_card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--secondary_color), var(--accent_color));
+    opacity: 0;
+    transition: 0.4s all;
+}
+
+.d2c_project_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(94, 106, 210, 0.2);
+    border-color: var(--secondary_color);
+}
+
+.d2c_project_card:hover::before {
+    opacity: 1;
+}
+
+.d2c_project_icon_wrapper {
+    text-align: center;
+}
+
+.d2c_project_icon_wrapper .d2c_service_icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.35) 0%, rgba(13, 17, 26, 0.05) 100%);
+    box-shadow: 0px 5px 20px 5px rgba(94, 106, 210, 0.22);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--secondary_color);
+    transition: 0.4s all;
+}
+
+.d2c_project_card:hover .d2c_project_icon_wrapper .d2c_service_icon {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 25px 8px rgba(94, 106, 210, 0.3);
+}
+
+.d2c_project_wrapper h3 {
+    color: var(--default_color);
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.d2c_project_wrapper .d2c_card_child_three p {
+    color: var(--text_color);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 26px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.d2c_project_wrapper .btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 8px 20px;
+}
+
+/* Legacy styles for backward compatibility */
 .d2c_project_wrapper .d2c_large_img {
     height: 500px;
 }
@@ -704,21 +789,6 @@ h1 span {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.d2c_project_wrapper h3 {
-    color: var(--default_color);
-    font-size: 22px;
-    font-weight: 700;
-    text-transform: capitalize;
-    margin-bottom: 16px;
-}
-
-.d2c_project_wrapper .d2c_card_child_three p {
-    color: var(--color_two);
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 26px;
 }
 
 .d2c_project_wrapper h4 {
